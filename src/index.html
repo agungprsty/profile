@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ProfileQ | Home</title>
+</head>
+
+<body>
+    <navbar-app></navbar-app>
+    <header id="header">
+        <a href="#" class="logo">Profile<span>Q</span></a>
+        <ul>
+            <li><a href="#Home" class="active" onclick="toggle()">Home</a></li>
+            <li><a href="#Search" onclick="toggle()">Search</a></li>
+            <li><a href="#About" onclick="toggle()">About</a></li>
+            <li><a href="#Contact" onclick="toggle()">Contact</a></li>
+            <li><a href="#Feedback" onclick="toggle()">Feedback</a></li>
+        </ul>
+        <div onclick="toggle()" class="toggle"></div>
+    </header>
+    <section id="Home" class="home">
+        <h2>Hi, FOOTBALL LOVERS!</h2>
+        <p>Here you can find out the profile of the football player you like. <br> Starting from what club the player is in, date of birth, <br> to their nationality, and many more. Curious?</p>
+        <a href="#Search">Get Started for Free!</a>
+    </section>
+    <section id="Search" class="search">
+        <div>
+            <h2>Search Players</h2>
+            <search-players></search-players>
+            <list-players></list-players>
+            </main>
+        </div>
+    </section>
+    <section id="About" class="about">
+        <div>
+            <h2>About</h2>
+            <p>ProfileQ website is a collection of metadata, artwork, results and tables that has a JSON API. The site was built in 2015 to serve a need for a common interface of sports data for various Home Theatre Applications.Since then it has grown into
+                one of the largest free sports databases on the net.</p>
+            <p>Features are driven by our users, so jump on our forums to make any requests. Our site is free to use for all, via the frontend or the simple JSON interface. We accept donations to keep us running. We are also interested in any business proposals
+                to make this site even better!</p>
+        </div>
+    </section>
+    <section id="Contact" class="contact">
+        <contact-bar></contact-bar>
+    </section>
+
+    <a href="#" class="to-top">&#128285;</a>
+
+    <p class="footer"></p>
+
+    <footer-bars></footer-bars>
+
+    <script>
+        function toggle() {
+            const header = document.getElementById("header")
+            header.classList.toggle("active")
+        }
+    </script>
+</body>
+
+</html>
